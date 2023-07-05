@@ -11,32 +11,45 @@
 }
 .flexbox{
   display: flex;
+
   /* background-color: rgba(255, 0, 0, 0.4); */
   align-items: center;
 }
 .flexbox-header{
   min-height: 15vh;
-  align-items: center;
-  justify-content: center;
+  width: 80%;
+
+  vertical-align: middle;
+  justify-content: start;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 .header-text>h1{
+  margin-left: 0.4em;
   color: #f1f2f3;
   font-family: Roboto !important;
-  padding-left: 0.3em;
+
 }
 img{
   width: 100%;
+  background-color: #f1f2f3;
+  border-radius: 50%;
 }
 
-.img-box{vertical-align: middle; text-align: end;}
+.img-box{
+
+  vertical-align: middle;
+  text-align: justify;
+}
 
 .flexbox-main{
-background-color:#f0f0f0;
+
 width: 80%;
 margin-left: auto;
 margin-right: auto;
 margin-top: .5em;
-border-radius: 7PX;
+
 min-height: 50vh;
 }
 .flexbox-main>div{
@@ -48,18 +61,17 @@ min-height: 50vh;
   display: block;
   width: 100%;
 }
-
-
+/*
+.img-box{width: 25%;}
+.header-text{width: 75%;} */
 @media only screen and (max-width: 1000px) {
   img{width: 5em;}
-  .img-box{width: 30%;}
-  .header-text{width: 70%;}
+
   .header-font-size{font-size: 2.5em}
 }
 @media only screen and (min-width: 1001px) {
   img{width: 10em;}
-  .img-box{width: 30%; }
-  .header-text{width: 70%;}
+
   .header-font-size{font-size: 4.5em};
 }
 
@@ -68,22 +80,44 @@ min-height: 50vh;
   text-align: right;
 }
 .btns-above-card>button{
+  font-size: large;
   word-break: break-all;
   word-wrap: break-word;
   border: none;
-  margin:0.5em;
-  min-height: 1.5em;
-  width: 1.5em;
-  border-radius: 50%;
+  margin:0.4em;
+  min-height: 2em;
+  width: 5.5em;
+  border-radius: 7px;
+}
+.btns-above-card>button:hover{
+  transition: background 1s;
 }
 #green-btn{
   background-color: #92CD28;
+  color: #92CD28;
+}
+#green-btn:hover{
+  background-color: #f1f2f3;
+  border: 4px solid #92CD28;
+  color: #92CD28; /* For modern browsers */
 }
 #orange-btn{
   background-color: #ffa33f;
+  color: #ffa33f;
+}
+#orange-btn:hover{
+  background-color: #f1f2f3;
+  color: #ffa33f;
+  border: 4px solid #ffa33f;
 }
 #red-btn{
   background-color: #d3212c;
+  color: #d3212c;
+}
+#red-btn:hover{
+  background-color: #f1f2f3;
+  color: #d3212c;
+  border: 4px solid #d3212c;
 }
 button:hover{
 cursor: pointer;
@@ -93,4 +127,9 @@ button{
 }
 p{
   font-family: Roboto !important;
+}
+.card{
+  background-color:#f0f0f0;
+  border-radius: 7PX;
+  min-height: 10em;
 }
