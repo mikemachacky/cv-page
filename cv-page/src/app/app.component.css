@@ -7,11 +7,11 @@
 }
 .flex{
  width: max-content;
-background-color: rgba(0, 255, 0, 0.4);
+/* background-color: rgba(0, 255, 0, 0.4); */
 }
 .flexbox{
   display: flex;
-  background-color: rgba(255, 0, 0, 0.4);
+  /* background-color: rgba(255, 0, 0, 0.4); */
   align-items: center;
 }
 .flexbox-header{
@@ -27,18 +27,17 @@ background-color: rgba(0, 255, 0, 0.4);
 img{
   width: 100%;
 }
-p{
-font-family: Roboto;
-}
+
 .img-box{vertical-align: middle; text-align: end;}
 
 .flexbox-main{
-background-color: rgba(0, 0, 255, 0.4);
+background-color:#f0f0f0;
 width: 80%;
 margin-left: auto;
 margin-right: auto;
-margin-top: 1.5em;
+margin-top: .5em;
 border-radius: 7PX;
+min-height: 50vh;
 }
 .flexbox-main>div{
   width: 100%;
@@ -64,3 +63,31 @@ border-radius: 7PX;
   .header-font-size{font-size: 4.5em};
 }
 
+.btns-above-card{
+  margin-right: 0;
+  text-align: right;
+}
+.btns-above-card>button{
+  word-break: break-all;
+  word-wrap: break-word;
+  border: none;
+  margin:0.5em;
+  min-height: 1.5em;
+  width: 1.5em;
+  border-radius: 50%;
+}
+#green-btn{
+  background-color: #92CD28;
+}
+#orange-btn{
+  background-color: #ffa33f;
+}
+#red-btn{
+  background-color: #d3212c;
+}
+button:hover{
+cursor: pointer;
+}
+p{
+  font-family: Roboto !important;
+}
