@@ -88,6 +88,9 @@ min-height: 50vh;
 button:hover{
 cursor: pointer;
 }
+button{
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+}
 p{
   font-family: Roboto !important;
 }
