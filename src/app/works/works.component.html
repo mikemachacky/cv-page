@@ -1,4 +1,11 @@
-<p>works works!</p>
-<div *ngFor="let imageSrc of imageSrcs">
-  <img [src]="imageSrc" alt="imageSrc">
+<div class="component-container">
+<h1>Projects: {{projectsNumber}} </h1>
+<div class="gallery">
+  <div *ngFor="let imageSrc of images">
+    <h4>{{imageSrc.title}}</h4>
+    <img [src]="imageSrc.path" alt="img">
+    <p>{{imageSrc.description}}</p>
+  </div>
+</div>
+
 </div>

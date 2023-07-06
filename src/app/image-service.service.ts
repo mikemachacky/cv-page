@@ -1,27 +1,36 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+
+export interface Image {
+  path: string;
+  title: string;
+  description: string;
+}
 export class ImageServiceService {
 
-  private images: string[] = [
-    'path/do/obrazu1.jpg',
-    'path/do/obrazu2.jpg',
-    'path/do/obrazu3.jpg'
+  private images: Image[] =
+  [
+    {
+      path: 'path',
+      title: 'title',
+      description: 'description'
+    }
   ];
-  private icons: string[] = [
-    'path/do/obrazu1.jpg',
-    'path/do/obrazu2.jpg',
-    'path/do/obrazu3.jpg'
+
+  private icons: Image[] = [
+    {
+      path: 'path',
+      title: 'title',
+      description: 'description'
+    }
   ];
 
   constructor() { }
 
-  getImages(): string[] {
+  getImages(): Image[] {
     return this.images;
   }
-  getIcons(): string[] {
+  getIcons(): Image[] {
     return this.icons;
   }
 }
