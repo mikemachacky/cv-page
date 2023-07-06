@@ -6,6 +6,10 @@ export interface Image {
   title: string;
   description: string;
 }
+export interface Icon{
+  iconPath: string,
+  link: string,
+}
 export class ImageServiceService {
 
   private images: Image[] =
@@ -17,11 +21,10 @@ export class ImageServiceService {
     }
   ];
 
-  private icons: Image[] = [
+  private icons: Icon[] = [
     {
-      path: 'path',
-      title: 'title',
-      description: 'description'
+      iconPath: 'path',
+      link: 'title',
     }
   ];
 
@@ -30,7 +33,7 @@ export class ImageServiceService {
   getImages(): Image[] {
     return this.images;
   }
-  getIcons(): Image[] {
+  getIcons(): Icon[] {
     return this.icons;
   }
 }

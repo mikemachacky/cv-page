@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'about-component', component: AboutComponent },
   { path: 'contact-component', component: ContactComponent },
   { path: 'works-component', component: WorksComponent },
+
 ];
 
 @NgModule({

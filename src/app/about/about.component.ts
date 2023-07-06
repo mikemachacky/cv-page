@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { ImageServiceService as ImageService } from '../image-service.service';
-import { Image } from '../image-service.service';
+import { ImageServiceService as ImageService, Icon } from '../image-service.service';
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
@@ -8,8 +7,8 @@ import { Image } from '../image-service.service';
   providers:[ImageService]
 })
 export class AboutComponent {
-  icons: Image[] = [];
-  projectsNumber =0;
+  icons: Icon[] = [];
+
   constructor(private imageService: ImageService) { }
 
   ngOnInit() {

@@ -1,1 +1,6 @@
 <p>about works!</p>
+<div *ngFor="let iconItem of icons">
+  <a [href]="iconItem.link"> <img [src]="iconItem.iconPath" alt="img"></a>
+
+
+</div>

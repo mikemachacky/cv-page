@@ -10,10 +10,13 @@ import { Image } from '../image-service.service';
 export class WorksComponent {
   images: Image[] = [];
   projectsNumber =0;
+  i=0;
   constructor(private imageService: ImageService) { }
 
   ngOnInit() {
     this.images = this.imageService.getImages();
-
+    if ( this.images[this.i] instanceof Object ) {
+      this.projectsNumber++;
+  }
   }
 }
