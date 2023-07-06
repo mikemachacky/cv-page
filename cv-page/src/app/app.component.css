@@ -49,40 +49,22 @@ width: 80%;
 margin-left: auto;
 margin-right: auto;
 margin-top: .5em;
-
 min-height: 50vh;
 }
 .flexbox-main>div{
   width: 100%;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   flex-wrap: wrap;
 }
-.break-flex{
-  display: block;
-  width: 100%;
-}
-/*
-.img-box{width: 25%;}
-.header-text{width: 75%;} */
-@media only screen and (max-width: 1000px) {
-  img{width: 5em;}
 
-  .header-font-size{font-size: 2.5em}
-}
-@media only screen and (min-width: 1001px) {
-  img{width: 10em;}
 
-  .header-font-size{font-size: 4.5em};
-}
 
 .btns-above-card{
-  margin-right: 0;
-  text-align: right;
+  display: inline-block;
+  white-space: nowrap;
 }
 .btns-above-card>button{
   font-size: large;
-  word-break: break-all;
-  word-wrap: break-word;
   border: none;
   margin:0.4em;
   min-height: 2em;
@@ -132,4 +114,14 @@ p{
   background-color:#f0f0f0;
   border-radius: 7PX;
   min-height: 10em;
+}
+@media only screen and (max-width: 1000px) {
+  img{width: 5em;}
+  .btns-above-card{ display: inline-flex; justify-content: center; align-items: center; margin-left: auto; margin-right: auto !important;}
+  .header-font-size{font-size: 2em}
+}
+@media only screen and (min-width: 1001px) {
+  img{width: 10em;}
+ .btns-above-card{  align-items: center; text-align: right;}
+  .header-font-size{font-size: 4.5em};
 }
