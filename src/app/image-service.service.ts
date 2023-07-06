@@ -10,10 +10,18 @@ export class ImageServiceService {
     'path/do/obrazu2.jpg',
     'path/do/obrazu3.jpg'
   ];
+  private icons: string[] = [
+    'path/do/obrazu1.jpg',
+    'path/do/obrazu2.jpg',
+    'path/do/obrazu3.jpg'
+  ];
 
   constructor() { }
 
-  getData(): string[] {
+  getImages(): string[] {
     return this.images;
+  }
+  getIcons(): string[] {
+    return this.icons;
   }
 }

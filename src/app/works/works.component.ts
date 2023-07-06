@@ -12,6 +12,6 @@ export class WorksComponent {
   constructor(private imageService: ImageService) { }
 
   ngOnInit() {
-    this.imageSrcs = this.imageService.getData();
+    this.imageSrcs = this.imageService.getImages();
   }
 }
