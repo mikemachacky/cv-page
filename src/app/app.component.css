@@ -123,5 +123,5 @@ p{
 @media only screen and (min-width: 1001px) {
   img{width: 10em;}
  .btns-above-card{  align-items: center; text-align: right;}
-  .header-font-size{font-size: 4.5em};
+  .header-font-size{font-size: 4.5em}
 }
