@@ -3,7 +3,8 @@
 <div class="gallery">
   <div *ngFor="let imageSrc of images">
     <h4>{{imageSrc.title}}</h4>
-    <img [src]="imageSrc.path" alt="img">
+    <a [href]="imageSrc.link"><img [src]="imageSrc.path" alt="img">
+    </a>
     <p>{{imageSrc.description}}</p>
   </div>
 </div>

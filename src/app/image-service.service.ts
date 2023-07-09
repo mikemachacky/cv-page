@@ -5,6 +5,7 @@ export interface Image {
   path: string;
   title: string;
   description: string;
+  link: string;
 }
 export interface Icon{
   iconPath: string,
@@ -17,14 +18,15 @@ export class ImageServiceService {
     {
       path: 'path',
       title: 'title',
-      description: 'description'
+      description: 'description',
+      link: 'link',
     }
   ];
 
   private icons: Icon[] = [
     {
       iconPath: 'path',
-      link: 'title',
+      link: 'link',
     }
   ];
 
