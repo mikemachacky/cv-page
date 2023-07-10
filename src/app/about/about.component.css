@@ -1,0 +1,58 @@
+*{
+  font-family: Roboto;
+}
+.icons-gallery {
+  margin-top: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10%, 1fr));
+
+}
+
+.icons-gallery a {
+  text-decoration: none;
+}
+
+.icons-gallery img {
+  width: 30%;
+
+}
+.about-section {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.section{
+ width: 100%;
+}
+.about-section h2 {
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.about-section h3 {
+  font-size: large;
+  font-weight: bold;
+ margin-top: 0.5em;
+
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  margin-bottom: 0.1em;
+  padding: 0;
+}
+
+
+.container{
+  margin-top: 1em;
+
+}
+
+

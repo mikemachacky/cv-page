@@ -1,6 +1,32 @@
-<p>about works!</p>
-<div *ngFor="let iconItem of icons">
-  <a [href]="iconItem.link"> <img [src]="iconItem.iconPath" alt="img"></a>
+<div class="container">
+  <div class="about-section">
+        <div class="section">
+        <h2>O mnie</h2>
+        <p>Nazywam się Magdalena Machacka i jestem studentką II roku informatyki
+          na Politechnice Opolskiej.
+          Ukończyłam Technikum Elektryczne nr. 5
+          w Opolu o profilu informatyka, a także odbyłam
+          Kurs Kwalifikacji Zawodowych jako technik programista.
+          </p>
+      </div>
 
 
-</div>
+    <div class="section">
+        <h3>Zainteresowania</h3>
+          <p>Moje zainteresowania to programowanie
+            aplikacji webowych i mobilnych oraz
+            pogłębianie wiedzy związanej z nowymi
+            technologiami.</p>
+    </div>
+        <div class="section">
+        <h3>Stos technologii</h3>
+
+        <p>HTML5 CSS3 JavaScript Angular C++/C# MS Xamarin/ MS Forms MySQL Git</p>
+
+      </div>
+      <div class="icons-gallery">
+        <a *ngFor="let iconItem of icons" [href]="iconItem.link">
+          <img [src]="iconItem.iconPath" alt="img">
+        </a>
+      </div>
+  </div>
